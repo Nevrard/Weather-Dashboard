@@ -1,0 +1,90 @@
+* {
+  margin:0;
+  padding:0; 
+}
+
+header, .forecast, .display-4, .result, .card {
+  font-family: 'Blinker', sans-serif;
+}
+
+.navbar-text {
+ font-size: 50px;
+ color:#ffff
+ 
+}
+
+
+.input-group, .btn-secondary  {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.input-group {
+  width: 70%;
+}
+
+.list-group {
+  margin-left: 20px;
+  
+}
+
+
+#clear {
+  background-color: rgb(33, 106, 190);
+  display: none;
+}
+
+.list-group {
+  cursor: pointer;
+}
+
+
+.jumbotron {
+  margin-top: 20px;
+  background-color: rgb(238, 238, 232);
+  border:1px grey dashed;
+  border-radius: 5px;
+  display: none;
+
+}
+
+.result {
+  margin-bottom: 20px;
+  display:block;
+
+}
+
+.title {
+ font-size: 30px;
+ margin-bottom: 35px;
+ 
+}
+
+#forecast-result {
+  display: none;
+  background-color: rgb(238, 238, 232);
+  border:1px grey dashed;
+  border-radius: 5px;
+} 
+
+.card-body {
+  padding: 0.25rem;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+.card-deck {
+  padding: 0;
+  margin: 0;
+}
+.card{
+  margin-left: 10px;
+}
+li{
+  width: 350px;
+}
+li:hover{
+  background-color: rgb(169, 215, 241);
+}

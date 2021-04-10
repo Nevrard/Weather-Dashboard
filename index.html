@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Weather Dashboard</title>
+</head>
+<header>
+  <nav class="navbar navbar-light bg-info justify-content-center">
+    <h1 class="navbar-text" style="color: #ffff">
+      Weather Dashboard
+    </h1>
+  </nav>
+</header>
+
+<body>
+  <div class="row">
+    <div class="col-4">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="userInput" placeholder="Search for a place"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-info" id="searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <ul class="list-group" id="SearchedPlaces">
+      </ul>
+      <button type="button" class="btn btn-secondary btn-sm" id="clear">Clear</button>
+    </div>
+    <div class="col-8">
+      
+      
+      <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+          <div class="display-flex">
+                        <h4 class="display-4" id="placeName"></h4>
+            <img id='icon' />
+            
+          </div>
+          <p class="result" id="temperature"></p>
+          <p class="result" id="humidity"></p>
+          <p class="result" id="windSpeed"></p>
+          <p class="result"> UV index :<span id="uvIndex"></span></p>
+        </div>
+      </div>
+      
+      <section id="forecast-result">
+        <h1 class="title">5-Day Forecast:</h1>
+        <div class="card-deck col-lg-12">
+          <div class="card text-white bg-info mb-3">
+            <div class="card-body">
+              <h5 class="card-title" id="Date0"></h5>
+              <img id="icon0">
+              <p class="card-text" id="temperature0"></p>
+              <p id="humidity0"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-info mb-3">
+            <div class="card-body">
+              <h4 class="card-title" id="Date1"></h4>
+              <img id="icon1">
+              <p class="card-text" id="temperature1"></p>
+              <p id="humidity1"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-info mb-3">
+            <div class="card-body">
+              <h5 class="card-title" id="Date2"></h5>
+              <img id="icon2">
+              <p class="card-text" id="temperature2"></p>
+              <p id="humidity2"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-info mb-3">
+            <div class="card-body">
+              <h5 class="card-title" id="Date3"></h5>
+              <img id="icon3">
+              <p class="card-text" id="temperature3"></span></p>
+              <p id="humidity3"></p>
+            </div>
+          </div>
+          <div class="card text-white bg-info mb-3">
+            <div class="card-body">
+              <h5 class="card-title" id="Date4"></h5>
+              <img id="icon4">
+              <p class="card-text"id="temperature4"></p>
+              <p id="humidity4"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
