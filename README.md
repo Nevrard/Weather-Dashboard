@@ -40,10 +40,11 @@ CSS for Styling
 
 ## Screenshots
 
-Home Page with the Search Section Only:
+-Home Page with the Search Section Only:
+
 ![image](https://user-images.githubusercontent.com/77184762/114340942-b274e580-9b26-11eb-86c8-8271b82df879.png)
 
-page with Weather information for the Searched City with the Previous searched as well
+-Page with Weather information for the Searched City with the Previous searched as well
 
 ![image](https://user-images.githubusercontent.com/77184762/114340836-717cd100-9b26-11eb-80da-ecb8bc82fc2a.png)
 
