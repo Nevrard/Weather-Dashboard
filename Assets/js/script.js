@@ -60,7 +60,7 @@ function renderWeather()
 }
 
 //Function that fetch and displays current Weather data 
-var getWeather = function (place) {
+function  getWeather (place) {
       var Url = 'https://api.openweathermap.org/data/2.5/weather?q=' + place + '&units=imperial&appid=' + apiKey;
    
       fetch(Url)
@@ -159,11 +159,14 @@ function fiveDaysForecast(place) {
 }
 
 function init(){
-   var place= localStorage.getItem('lastSearched')
+   var place= JSON.parse(localStorage.getItem('lastSearched'))
  console.log(place)
- /*  getWeather(Tokyo)
-  fiveDaysForecast(Tokyo) */
-  renderHistory() 
+ if(place){
+        getWeather(place)
+        fiveDaysForecast(place) 
+        renderHistory() 
+        }
+      
 }
 
  
