@@ -38,8 +38,8 @@ function renderHistory(){
 
        
     }
-
- renderHistory()
+ 
+    init()
 //Event listener on Serach button
 searchEl.addEventListener("click",renderWeather)
 
@@ -102,6 +102,8 @@ var getWeather = function (place) {
                 }          
             })
         userInput.value="";
+        var lastSearched=data.name
+        localStorage.setItem('lastSearched', JSON.stringify(lastSearched));
         var checkPlace=placesHistory.includes(data.name)
         if(checkPlace===false)
             {
@@ -154,6 +156,14 @@ function fiveDaysForecast(place) {
     }
   })
 
+}
+
+function init(){
+   var place= localStorage.getItem('lastSearched')
+ console.log(place)
+ /*  getWeather(Tokyo)
+  fiveDaysForecast(Tokyo) */
+  renderHistory() 
 }
 
  
